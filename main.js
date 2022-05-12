@@ -1,9 +1,9 @@
 const drawingSpace = document.querySelector('.drawingSpace');
 const changeGridSize = document.querySelector('#changeGridSize');
+const colorPicker = document.querySelector('#colorPicker');
 changeGridSize.addEventListener('click', () => gridSize());
 document.addEventListener('mousedown', () => mouseDown = true);
 document.addEventListener('mouseup', () => mouseDown = false);
-let defaultColor = "black";
 let mouseDown = false;
 
 createGrid(16);
@@ -31,7 +31,7 @@ function editGrid(i) {
 function changeColor(grid) {
     if (mouseDown === false) return;
     const currentGrid = document.getElementById(grid.id);
-    currentGrid.setAttribute('style', `background-color: ${defaultColor};`)
+    currentGrid.setAttribute('style', `background-color: ${colorPicker.value};`)
 }
 
 // Changes the grid size
