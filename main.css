@@ -1,5 +1,26 @@
 body {
-    background: rgb(100, 100, 100)
+    background: rgb(100, 100, 100);
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button {
+    background-color:rgb(208, 208, 208);
+    border: 8px solid black;
+    margin: 10px 0;
+    padding: 25px 40px;
+}
+
+input {
+  background-color:rgb(208, 208, 208);
+  border: 8px solid black;
+  width: 350px;
+  height: 83px;
+  margin: 10px 0;
 }
 
 .container {
@@ -14,3 +35,41 @@ body {
     width: 750px;
     height: 750px;
 }
+
+.controls {
+    display: flex;
+    margin-right: 25px;
+    flex-direction: column;
+}
+/* <!-- HTML !-->
+<button class="button-54" role="button">Button 54</button>
+
+CSS 
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+} */
