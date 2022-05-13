@@ -39,6 +39,7 @@ function gridSize() {
     const allGrids = document.querySelectorAll('div.grid');
     const newSize = prompt("How large should the grid be?");
     if (newSize > 64) return alert("That's too big! Max is 64.");
+    if (!newSize) return;
     allGrids.forEach(grid => drawingSpace.removeChild(grid));
     createGrid(newSize);
 }
